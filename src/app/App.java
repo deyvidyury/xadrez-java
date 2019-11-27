@@ -1,7 +1,10 @@
 package app;
 
+import chess.ChessMatch;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello Java");
+        ChessMatch chessMatch = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
     }
 }
